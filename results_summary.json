@@ -1,0 +1,36 @@
+{
+  "project": "ExpiryBench v0.1",
+  "evaluation_date": "2026-11-14",
+  "model_identifier_recorded": "gpt-6-luna",
+  "dataset": {
+    "file": "expirybench_v0_1.jsonl",
+    "items": 40,
+    "items_per_label": 10,
+    "sha256": "f38f1d2695a43fc2999363a6b494583e5690843902934d82954c1b90ab07b585"
+  },
+  "successful_responses": 120,
+  "conditions": {
+    "neutral": {"n": 40, "status_accuracy": 0.95, "action_accuracy": 0.95, "joint_accuracy": 0.95, "indeterminate_correct": 8, "indeterminate_n": 10, "indeterminate_false_definitive": 2, "validity_action_gap": 0},
+    "temporal_hint": {"n": 40, "status_accuracy": 0.825, "action_accuracy": 0.825, "joint_accuracy": 0.825, "indeterminate_correct": 3, "indeterminate_n": 10, "indeterminate_false_definitive": 7, "validity_action_gap": 0},
+    "balanced_hint": {"n": 40, "status_accuracy": 1.0, "action_accuracy": 1.0, "joint_accuracy": 1.0, "indeterminate_correct": 10, "indeterminate_n": 10, "indeterminate_false_definitive": 0, "validity_action_gap": 0}
+  },
+  "paired_comparisons": [
+    {"comparison": "neutral_vs_temporal_hint", "both_correct": 32, "neutral_only_correct": 6, "temporal_hint_only_correct": 1, "both_wrong": 1, "mcnemar_exact_two_sided_p": 0.125},
+    {"comparison": "balanced_hint_vs_neutral", "both_correct": 38, "balanced_hint_only_correct": 2, "neutral_only_correct": 0, "both_wrong": 0, "mcnemar_exact_two_sided_p": 0.5},
+    {"comparison": "balanced_hint_vs_temporal_hint", "both_correct": 33, "balanced_hint_only_correct": 7, "temporal_hint_only_correct": 0, "both_wrong": 0, "mcnemar_exact_two_sided_p": 0.015625}
+  ],
+  "holm_adjustment_all_three_comparisons": {
+    "balanced_hint_vs_temporal_hint": 0.046875,
+    "neutral_vs_temporal_hint": 0.25,
+    "balanced_hint_vs_neutral": 0.5
+  },
+  "limitations": [
+    "Synthetic pilot dataset with 40 items.",
+    "Ten indeterminate cases share a similar structural pattern.",
+    "One model identifier and one response per item per condition.",
+    "Balanced prompt was developed after inspecting earlier results.",
+    "Single researcher audited gold labels; no independent second annotator.",
+    "No Validity-Action Gap cases were observed.",
+    "Raw API logs were not present in the source archive used to assemble this package."
+  ]
+}
