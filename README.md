@@ -33,20 +33,22 @@ These results do not establish general temporal reasoning ability, performance o
 
 ## Repository contents
 
-- `paper.md`: research report draft.
-- `ExpiryBench_paper.docx` and `ExpiryBench_paper.pdf`: working report exports. These are not yet verified exports from the official sprint template.
-- `expirybench_v0_1.jsonl` and `expirybench_v0_1.csv`: synthetic benchmark items.
-- `PROMPTS.md`: exact prompt conditions.
-- `research_protocol.md`: protocol and design notes.
-- `run_eval.py`, `score_runs.py`, `paired_analysis.py`: evaluation and analysis scripts.
-- `results_summary.json`: reported pilot metrics.
-- `RAW_RUNS_STATUS.md`: status of original response logs.
+The files currently present in the repository are:
+
+- `PROMPTS.md`: prompt-condition descriptions.
+- `results_summary.json`: pilot metrics and paired-comparison results.
+- `runs_openai.jsonl`: sanitized append-only response log for the neutral and temporal-hint conditions.
+- `RAW_RUNS_STATUS.md`: audit findings, redaction notes, and scope limitations.
+
+The report, dataset, evaluation scripts, and other working files are not currently present in this repository. They should be added before describing this repository as a fully self-contained reproduction package.
 
 ## Reproducibility and raw logs
 
-The original response logs are not included in this repository yet. The reported metrics were transcribed from the scoring and paired-analysis outputs supplied during the research process, not freshly recomputed from raw response records in this package. Do not treat the results as independently reproduced until the logs have been audited and the scoring scripts rerun.
+The public `runs_openai.jsonl` contains 119 attempt records: 80 completed responses (40 per condition), 38 failed API connection attempts, and one incomplete neutral response. The 80 completed responses were rescored directly from their stored outputs. Neutral joint accuracy is 38/40 (95.0%), and temporal-hint joint accuracy is 33/40 (82.5%), matching the corresponding entries in `results_summary.json`.
 
-Before publishing raw logs, check for API keys, authorization headers, personal information, or other secrets. Never commit an API key. Keep keys in local environment variables.
+The public copy has had provider-generated response IDs removed. A pattern-based scan found no obvious API keys, bearer tokens, authorization-header values, private-key markers, or email addresses. See `RAW_RUNS_STATUS.md` for the full scope and limitations of this review.
+
+The separate 40-response balanced-hint log is not present, so the public raw log does not independently reproduce all 120 successful responses reported in the three-condition summary. Do not claim otherwise.
 
 ## Work provenance and AI assistance
 
