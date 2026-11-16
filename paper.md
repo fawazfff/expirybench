@@ -208,4 +208,4 @@ AI tools were used to assist with code drafting and debugging, analysis-script d
 
 ## Public research materials
 
-The public repository contains the prompt descriptions, results summary, sanitized run logs for all three conditions, and raw-log audit notes: https://github.com/fawazfff/expirybench.
+The public repository contains the 40-item JSONL/CSV dataset, deterministic dataset generator, evaluation runner, scoring and paired-analysis scripts, prompt descriptions, results summary, sanitized run logs for all three conditions, and raw-log audit notes: https://github.com/fawazfff/expirybench.
