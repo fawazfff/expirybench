@@ -1,0 +1,441 @@
+item_id,query_date,topic,condition,target_document,gold_label,gold_action,question,documents,gold_rationale
+"EB-038","2026-09-01","Training Requirement","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-09-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Training Requirement
+Published: 2024-02-22
+Effective from: 2024-03-22
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: New staff must complete a security review before independent work.
+
+DOCUMENT B — Training Requirement (later publication)
+Published: 2026-07-01
+Effective from: 2026-11-01
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: New staff must complete a completed induction before independent work.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-012","2026-07-15","Vendor Onboarding","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-07-15, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Vendor Onboarding
+Published: 2024-06-16
+Effective from: 2024-07-16
+Valid through: 2026-03-15
+Provision: New vendors must complete three months of service before receiving purchase orders.
+
+DOCUMENT B — Vendor Onboarding (replacement)
+Published: 2026-02-15
+Effective from: 2026-03-16
+Explicitly replaces Document A from its effective date.
+Provision: New vendors must complete a security review before receiving purchase orders.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-037","2026-07-15","Incident Reporting","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-07-15, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Incident Reporting
+Published: 2024-01-21
+Effective from: 2024-02-21
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Incidents must be reported within 18 hours of discovery.
+
+DOCUMENT B — Incident Reporting (later publication)
+Published: 2026-06-15
+Effective from: 2026-08-15
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Incidents must be reported within 48 hours of discovery.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-025","2026-11-20","Research Grant Eligibility","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-11-20, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Research Grant Eligibility
+Published: 2024-01-09
+Effective from: 2024-02-09
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Applicants must have at least two references to qualify for the internal research grant.
+
+DOCUMENT B — Research Grant Eligibility (announced revision)
+Published: 2026-10-20
+Effective from: 2026-12-20
+Explicitly replaces Document A only from the effective date above.
+Provision: Applicants must have at least manager approval to qualify for the internal research grant.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-027","2026-07-15","Incident Reporting","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-07-15, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Incident Reporting
+Published: 2024-03-11
+Effective from: 2024-04-11
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Incidents must be reported within 9 hours of discovery.
+
+DOCUMENT B — Incident Reporting (announced revision)
+Published: 2026-04-15
+Effective from: 2026-10-15
+Explicitly replaces Document A only from the effective date above.
+Provision: Incidents must be reported within 18 hours of discovery.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-007","2026-07-15","Incident Reporting","explicit_continuity","A","CURRENT","A","As of 2026-07-15, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Incident Reporting
+Published: 2024-01-11
+Effective from: 2024-02-11
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Incidents must be reported within 48 hours of discovery.
+
+DOCUMENT B — Incident Reporting (revision)
+Published: 2026-08-15
+Effective from: 2026-10-15
+Explicitly replaces Document A from its effective date.
+Provision: Incidents must be reported within 3 hours of discovery.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-015","2026-11-20","Research Grant Eligibility","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-11-20, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Research Grant Eligibility
+Published: 2024-03-19
+Effective from: 2024-04-19
+Valid through: 2026-08-20
+Provision: Applicants must have at least manager approval to qualify for the internal research grant.
+
+DOCUMENT B — Research Grant Eligibility (replacement)
+Published: 2026-07-20
+Effective from: 2026-08-21
+Explicitly replaces Document A from its effective date.
+Provision: Applicants must have at least a risk assessment to qualify for the internal research grant.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-019","2027-01-10","Cloud Storage","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2027-01-10, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Cloud Storage
+Published: 2024-01-23
+Effective from: 2024-02-23
+Valid through: 2026-10-10
+Provision: Project teams may use up to 300 GB of approved cloud storage.
+
+DOCUMENT B — Cloud Storage (replacement)
+Published: 2026-09-10
+Effective from: 2026-10-11
+Explicitly replaces Document A from its effective date.
+Provision: Project teams may use up to 60 GB of approved cloud storage.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-006","2026-06-01","Equipment Lending","explicit_continuity","A","CURRENT","A","As of 2026-06-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Equipment Lending
+Published: 2024-06-10
+Effective from: 2024-07-10
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Staff may borrow standard equipment for 24 days.
+
+DOCUMENT B — Equipment Lending (revision)
+Published: 2026-09-01
+Effective from: 2026-11-01
+Explicitly replaces Document A from its effective date.
+Provision: Staff may borrow standard equipment for 72 days.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-004","2027-01-10","Travel Reimbursement","explicit_continuity","A","CURRENT","A","As of 2027-01-10, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Travel Reimbursement
+Published: 2024-04-08
+Effective from: 2024-05-08
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Domestic travel may be reimbursed up to 90 credits per day.
+
+DOCUMENT B — Travel Reimbursement (revision)
+Published: 2027-02-10
+Effective from: 2027-04-10
+Explicitly replaces Document A from its effective date.
+Provision: Domestic travel may be reimbursed up to 200 credits per day.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-010","2026-11-20","Procurement Approval","explicit_continuity","A","CURRENT","A","As of 2026-11-20, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Procurement Approval
+Published: 2024-04-14
+Effective from: 2024-05-14
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Purchases above 500 credits require director approval.
+
+DOCUMENT B — Procurement Approval (revision)
+Published: 2026-12-20
+Effective from: 2027-02-20
+Explicitly replaces Document A from its effective date.
+Provision: Purchases above 75 credits require director approval.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-022","2026-07-15","Vendor Onboarding","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-07-15, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Vendor Onboarding
+Published: 2024-04-06
+Effective from: 2024-05-06
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: New vendors must complete a completed induction before receiving purchase orders.
+
+DOCUMENT B — Vendor Onboarding (announced revision)
+Published: 2026-06-15
+Effective from: 2026-09-15
+Explicitly replaces Document A only from the effective date above.
+Provision: New vendors must complete three months of service before receiving purchase orders.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-011","2026-06-01","Remote Work Allowance","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-06-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Remote Work Allowance
+Published: 2024-05-15
+Effective from: 2024-06-15
+Valid through: 2026-03-01
+Provision: Employees may claim a monthly remote-work allowance of 40 credits.
+
+DOCUMENT B — Remote Work Allowance (replacement)
+Published: 2026-02-01
+Effective from: 2026-03-02
+Explicitly replaces Document A from its effective date.
+Provision: Employees may claim a monthly remote-work allowance of 90 credits.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-003","2026-09-01","Data Retention","explicit_continuity","A","CURRENT","A","As of 2026-09-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Data Retention
+Published: 2024-03-07
+Effective from: 2024-04-07
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Routine project records must be retained for 9 months.
+
+DOCUMENT B — Data Retention (revision)
+Published: 2026-12-01
+Effective from: 2027-02-01
+Explicitly replaces Document A from its effective date.
+Provision: Routine project records must be retained for 18 months.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-039","2027-01-10","Cloud Storage","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2027-01-10, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Cloud Storage
+Published: 2024-03-23
+Effective from: 2024-04-23
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Project teams may use up to 300 GB of approved cloud storage.
+
+DOCUMENT B — Cloud Storage (later publication)
+Published: 2026-10-10
+Effective from: 2027-04-10
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Project teams may use up to 60 GB of approved cloud storage.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-017","2026-07-15","Incident Reporting","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-07-15, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Incident Reporting
+Published: 2024-05-21
+Effective from: 2024-06-21
+Valid through: 2026-06-15
+Provision: Incidents must be reported within 3 hours of discovery.
+
+DOCUMENT B — Incident Reporting (replacement)
+Published: 2026-05-15
+Effective from: 2026-06-16
+Explicitly replaces Document A from its effective date.
+Provision: Incidents must be reported within 9 hours of discovery.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-034","2027-01-10","Travel Reimbursement","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2027-01-10, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Travel Reimbursement
+Published: 2024-04-18
+Effective from: 2024-05-18
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Domestic travel may be reimbursed up to 90 credits per day.
+
+DOCUMENT B — Travel Reimbursement (later publication)
+Published: 2026-12-10
+Effective from: 2027-03-10
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Domestic travel may be reimbursed up to 200 credits per day.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-035","2026-11-20","Research Grant Eligibility","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-11-20, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Research Grant Eligibility
+Published: 2024-05-19
+Effective from: 2024-06-19
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Applicants must have at least a risk assessment to qualify for the internal research grant.
+
+DOCUMENT B — Research Grant Eligibility (later publication)
+Published: 2026-09-20
+Effective from: 2027-02-20
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Applicants must have at least two references to qualify for the internal research grant.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-023","2026-09-01","Data Retention","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-09-01, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Data Retention
+Published: 2024-05-07
+Effective from: 2024-06-07
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Routine project records must be retained for 48 months.
+
+DOCUMENT B — Data Retention (announced revision)
+Published: 2026-07-01
+Effective from: 2026-12-01
+Explicitly replaces Document A only from the effective date above.
+Provision: Routine project records must be retained for 3 months.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-013","2026-09-01","Data Retention","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-09-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Data Retention
+Published: 2024-01-17
+Effective from: 2024-02-17
+Valid through: 2026-08-01
+Provision: Routine project records must be retained for 18 months.
+
+DOCUMENT B — Data Retention (replacement)
+Published: 2026-07-01
+Effective from: 2026-08-02
+Explicitly replaces Document A from its effective date.
+Provision: Routine project records must be retained for 48 months.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-018","2026-09-01","Training Requirement","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-09-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Training Requirement
+Published: 2024-06-22
+Effective from: 2024-07-22
+Valid through: 2026-07-01
+Provision: New staff must complete three months of service before independent work.
+
+DOCUMENT B — Training Requirement (replacement)
+Published: 2026-06-01
+Effective from: 2026-07-02
+Explicitly replaces Document A from its effective date.
+Provision: New staff must complete a security review before independent work.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-021","2026-06-01","Remote Work Allowance","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-06-01, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Remote Work Allowance
+Published: 2024-03-05
+Effective from: 2024-04-05
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Employees may claim a monthly remote-work allowance of 40 credits.
+
+DOCUMENT B — Remote Work Allowance (announced revision)
+Published: 2026-03-01
+Effective from: 2026-07-01
+Explicitly replaces Document A only from the effective date above.
+Provision: Employees may claim a monthly remote-work allowance of 90 credits.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-020","2026-11-20","Procurement Approval","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-11-20, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Procurement Approval
+Published: 2024-02-24
+Effective from: 2024-03-24
+Valid through: 2026-07-20
+Provision: Purchases above 500 credits require director approval.
+
+DOCUMENT B — Procurement Approval (replacement)
+Published: 2026-06-20
+Effective from: 2026-07-21
+Explicitly replaces Document A from its effective date.
+Provision: Purchases above 75 credits require director approval.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-030","2026-11-20","Procurement Approval","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-11-20, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Procurement Approval
+Published: 2024-06-14
+Effective from: 2024-07-14
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Purchases above 500 credits require director approval.
+
+DOCUMENT B — Procurement Approval (announced revision)
+Published: 2026-08-20
+Effective from: 2027-01-20
+Explicitly replaces Document A only from the effective date above.
+Provision: Purchases above 75 credits require director approval.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-001","2026-06-01","Remote Work Allowance","explicit_continuity","A","CURRENT","A","As of 2026-06-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Remote Work Allowance
+Published: 2024-01-05
+Effective from: 2024-02-05
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Employees may claim a monthly remote-work allowance of 40 credits.
+
+DOCUMENT B — Remote Work Allowance (revision)
+Published: 2026-07-01
+Effective from: 2026-09-01
+Explicitly replaces Document A from its effective date.
+Provision: Employees may claim a monthly remote-work allowance of 90 credits.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-040","2026-11-20","Procurement Approval","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-11-20, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Procurement Approval
+Published: 2024-04-24
+Effective from: 2024-05-24
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Purchases above 500 credits require director approval.
+
+DOCUMENT B — Procurement Approval (later publication)
+Published: 2026-10-20
+Effective from: 2027-03-20
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Purchases above 75 credits require director approval.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-024","2027-01-10","Travel Reimbursement","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2027-01-10, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Travel Reimbursement
+Published: 2024-06-08
+Effective from: 2024-07-08
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Domestic travel may be reimbursed up to 90 credits per day.
+
+DOCUMENT B — Travel Reimbursement (announced revision)
+Published: 2026-10-10
+Effective from: 2027-05-10
+Explicitly replaces Document A only from the effective date above.
+Provision: Domestic travel may be reimbursed up to 200 credits per day.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-014","2027-01-10","Travel Reimbursement","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2027-01-10, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Travel Reimbursement
+Published: 2024-02-18
+Effective from: 2024-03-18
+Valid through: 2026-11-10
+Provision: Domestic travel may be reimbursed up to 90 credits per day.
+
+DOCUMENT B — Travel Reimbursement (replacement)
+Published: 2026-10-10
+Effective from: 2026-11-11
+Explicitly replaces Document A from its effective date.
+Provision: Domestic travel may be reimbursed up to 200 credits per day.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-008","2026-09-01","Training Requirement","explicit_continuity","A","CURRENT","A","As of 2026-09-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Training Requirement
+Published: 2024-02-12
+Effective from: 2024-03-12
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: New staff must complete a security review before independent work.
+
+DOCUMENT B — Training Requirement (revision)
+Published: 2026-11-01
+Effective from: 2027-01-01
+Explicitly replaces Document A from its effective date.
+Provision: New staff must complete a completed induction before independent work.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-028","2026-09-01","Training Requirement","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-09-01, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Training Requirement
+Published: 2024-04-12
+Effective from: 2024-05-12
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: New staff must complete a completed induction before independent work.
+
+DOCUMENT B — Training Requirement (announced revision)
+Published: 2026-08-01
+Effective from: 2027-01-01
+Explicitly replaces Document A only from the effective date above.
+Provision: New staff must complete three months of service before independent work.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-026","2026-06-01","Equipment Lending","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2026-06-01, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Equipment Lending
+Published: 2024-02-10
+Effective from: 2024-03-10
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Staff may borrow standard equipment for 6 days.
+
+DOCUMENT B — Equipment Lending (announced revision)
+Published: 2026-04-01
+Effective from: 2026-08-01
+Explicitly replaces Document A only from the effective date above.
+Provision: Staff may borrow standard equipment for 12 days.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-029","2027-01-10","Cloud Storage","published_but_future_effective","B","NOT_YET_EFFECTIVE","A","As of 2027-01-10, classify the status of target Document B. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Cloud Storage
+Published: 2024-05-13
+Effective from: 2024-06-13
+Validity statement: Document A remains in force until a replacement takes effect.
+Provision: Project teams may use up to 300 GB of approved cloud storage.
+
+DOCUMENT B — Cloud Storage (announced revision)
+Published: 2026-11-10
+Effective from: 2027-02-10
+Explicitly replaces Document A only from the effective date above.
+Provision: Project teams may use up to 60 GB of approved cloud storage.","B is already published but its effective date is after the query date; A remains in force until then."
+"EB-002","2026-07-15","Vendor Onboarding","explicit_continuity","A","CURRENT","A","As of 2026-07-15, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Vendor Onboarding
+Published: 2024-02-06
+Effective from: 2024-03-06
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: New vendors must complete a security review before receiving purchase orders.
+
+DOCUMENT B — Vendor Onboarding (revision)
+Published: 2026-09-15
+Effective from: 2026-11-15
+Explicitly replaces Document A from its effective date.
+Provision: New vendors must complete a completed induction before receiving purchase orders.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-032","2026-07-15","Vendor Onboarding","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-07-15, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Vendor Onboarding
+Published: 2024-02-16
+Effective from: 2024-03-16
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: New vendors must complete a security review before receiving purchase orders.
+
+DOCUMENT B — Vendor Onboarding (later publication)
+Published: 2026-05-15
+Effective from: 2026-11-15
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: New vendors must complete a completed induction before receiving purchase orders.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-009","2027-01-10","Cloud Storage","explicit_continuity","A","CURRENT","A","As of 2027-01-10, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Cloud Storage
+Published: 2024-03-13
+Effective from: 2024-04-13
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Project teams may use up to 300 GB of approved cloud storage.
+
+DOCUMENT B — Cloud Storage (revision)
+Published: 2027-04-10
+Effective from: 2027-06-10
+Explicitly replaces Document A from its effective date.
+Provision: Project teams may use up to 60 GB of approved cloud storage.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
+"EB-033","2026-09-01","Data Retention","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-09-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Data Retention
+Published: 2024-03-17
+Effective from: 2024-04-17
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Routine project records must be retained for 3 months.
+
+DOCUMENT B — Data Retention (later publication)
+Published: 2026-06-01
+Effective from: 2026-10-01
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Routine project records must be retained for 9 months.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-031","2026-06-01","Remote Work Allowance","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-06-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Remote Work Allowance
+Published: 2024-01-15
+Effective from: 2024-02-15
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Employees may claim a monthly remote-work allowance of 40 credits.
+
+DOCUMENT B — Remote Work Allowance (later publication)
+Published: 2026-05-01
+Effective from: 2026-09-01
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Employees may claim a monthly remote-work allowance of 90 credits.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-036","2026-06-01","Equipment Lending","validity_not_established","A","INDETERMINATE","ABSTAIN","As of 2026-06-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Equipment Lending
+Published: 2024-06-20
+Effective from: 2024-07-20
+No expiration date, replacement clause, or statement about continued validity is provided.
+Provision: Staff may borrow standard equipment for 12 days.
+
+DOCUMENT B — Equipment Lending (later publication)
+Published: 2026-03-01
+Effective from: 2026-10-01
+No statement says whether Document B replaces Document A, or what happens to A.
+Provision: Staff may borrow standard equipment for 24 days.","The available metadata does not establish whether A remains valid or was separately withdrawn; B's publication and future effective date do not resolve that."
+"EB-016","2026-06-01","Equipment Lending","explicit_expiry_and_replacement","A","EXPIRED","B","As of 2026-06-01, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Equipment Lending
+Published: 2024-04-20
+Effective from: 2024-05-20
+Valid through: 2026-02-01
+Provision: Staff may borrow standard equipment for 72 days.
+
+DOCUMENT B — Equipment Lending (replacement)
+Published: 2026-01-01
+Effective from: 2026-02-02
+Explicitly replaces Document A from its effective date.
+Provision: Staff may borrow standard equipment for 6 days.","A's stated validity ended before the query date; B replaced it from its effective date."
+"EB-005","2026-11-20","Research Grant Eligibility","explicit_continuity","A","CURRENT","A","As of 2026-11-20, classify the status of target Document A. Choose exactly one label: CURRENT, EXPIRED, NOT_YET_EFFECTIVE, or INDETERMINATE. Then choose which document should govern the decision on that date: A, B, or ABSTAIN if the evidence does not establish which applies. Use only the supplied documents. Return confidence from 0 to 100 for your combined judgment.","DOCUMENT A — Research Grant Eligibility
+Published: 2024-05-09
+Effective from: 2024-06-09
+Validity statement: Document A remains in force until it is replaced by a later document that has taken effect.
+Provision: Applicants must have at least a risk assessment to qualify for the internal research grant.
+
+DOCUMENT B — Research Grant Eligibility (revision)
+Published: 2027-01-20
+Effective from: 2027-03-20
+Explicitly replaces Document A from its effective date.
+Provision: Applicants must have at least two references to qualify for the internal research grant.","A is effective on the query date and remains in force until a later document takes effect. B is not yet effective."
