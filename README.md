@@ -59,9 +59,112 @@ These results do not establish general temporal reasoning ability, performance o
 
 The public run logs contain the 120 successful responses across all three conditions, plus the failed/incomplete attempts retained in the first log for transparency. The balanced-hint log was checked for valid JSON, unique coverage of all 40 item IDs, consistent model and dataset hash, and agreement between each predicted status/action and its gold label/action. The raw-data checks verify record integrity and scoring consistency; they do not independently validate the benchmark's gold-label design.
 
-## Reproduce the dataset
+## Clone the repository and reproduce the pilot
 
-Python 3.10 or newer is recommended.
+You can download the complete project to your computer and reproduce the published dataset and analysis. You do not need an API key to reproduce the reported pilot scores because the original experiment responses are included in the repository.
+
+### 1. Install the tools
+
+Install:
+- Git: https://git-scm.com/downloads
+- Python 3.10 or newer: https://www.python.org/downloads/
+
+On Windows, select the option to add Python to PATH during installation if the installer offers it.
+
+### 2. Clone the GitHub repository
+
+Open Terminal, PowerShell, or Command Prompt and run:
+
+```bash
+git clone https://github.com/fawazfff/expirybench.git
+cd expirybench
+```
+
+This downloads the project files and moves your terminal into the project folder.
+
+### 3. Install the Python packages
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+If your computer uses the Windows Python launcher, you can use `py -3 -m pip install -r requirements.txt` instead.
+
+### 4. Rebuild and verify the benchmark dataset
+
+Run:
+
+```bash
+python build_benchmark.py
+```
+
+The script generates `expirybench_v0_1.jsonl` and `expirybench_v0_1.csv` in the project folder. Check the JSONL checksum.
+
+macOS/Linux:
+
+```bash
+sha256sum expirybench_v0_1.jsonl
+```
+
+Windows PowerShell:
+
+```powershell
+(Get-FileHash .\expirybench_v0_1.jsonl -Algorithm SHA256).Hash.ToLower()
+```
+
+The expected SHA-256 is:
+
+```
+f38f1d2695a43fc2999363a6b494583e5690843902934d82954c1b90ab07b585
+```
+
+The checksum lets you check whether the generated dataset matches the frozen dataset used for the reported experiment. If the hash differs, do not treat it as the same dataset until the difference has been investigated.
+
+### 5. Reproduce the reported scores from the archived experiment
+
+Run:
+
+```bash
+python score_runs.py runs_openai.jsonl
+python score_runs.py runs_balanced_hint.jsonl
+python paired_analysis.py runs_openai.jsonl runs_balanced_hint.jsonl
+```
+
+These commands score the archived model responses and calculate the paired comparisons with Holm correction. They do not call an AI API and do not incur API charges.
+
+The reported joint accuracies are:
+- Neutral: 38/40 (95%).
+- Temporal hint: 33/40 (82.5%).
+- Balanced hint: 40/40 (100%).
+
+### 6. Run a new experiment (optional)
+
+This step is different from reproducing the published results. It sends new requests to the OpenAI API, creates new responses, may incur API charges, and will not necessarily produce the same scores.
+
+Set your API key as an environment variable. Do not put it in a Python file or commit it to GitHub.
+
+Windows PowerShell:
+
+```powershell
+$env:OPENAI_API_KEY = "YOUR_API_KEY"
+```
+
+macOS/Linux:
+
+```bash
+export OPENAI_API_KEY="YOUR_API_KEY"
+```
+
+Then run each prompt condition:
+
+```bash
+python run_eval.py --arm neutral --output new_runs_neutral.jsonl
+python run_eval.py --arm temporal_hint --output new_runs_temporal_hint.jsonl
+python run_eval.py --arm balanced_hint --output new_runs_balanced_hint.jsonl
+```
+
+Keep newly generated run files separate from the archived files. The runner writes provider response IDs to local output records, so do not publish those raw files without reviewing and sanitizing them first.
+
 
 ```bash
 python build_benchmark.py
