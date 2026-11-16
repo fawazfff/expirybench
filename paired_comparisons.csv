@@ -1,0 +1,4 @@
+comparison,first_condition,second_condition,both_correct,first_only_correct,second_only_correct,both_wrong,exact_mcnemar_two_sided_p,holm_adjusted_p
+neutral_vs_temporal_hint,neutral,temporal_hint,32,6,1,1,0.125,0.25
+balanced_hint_vs_neutral,balanced_hint,neutral,38,2,0,0,0.5,0.5
+balanced_hint_vs_temporal_hint,balanced_hint,temporal_hint,33,7,0,0,0.015625,0.046875
