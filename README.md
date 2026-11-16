@@ -38,17 +38,18 @@ The files currently present in the repository are:
 - `PROMPTS.md`: prompt-condition descriptions.
 - `results_summary.json`: pilot metrics and paired-comparison results.
 - `runs_openai.jsonl`: sanitized append-only response log for the neutral and temporal-hint conditions.
+- `runs_balanced_hint.jsonl`: sanitized 40-response log for the balanced-hint condition.
 - `RAW_RUNS_STATUS.md`: audit findings, redaction notes, and scope limitations.
 
-The report, dataset, evaluation scripts, and other working files are not currently present in this repository. They should be added before describing this repository as a fully self-contained reproduction package.
+`paper.md` contains the research report. The dataset and evaluation scripts are not currently listed above, so this repository should not yet be described as a fully self-contained reproduction package.
 
 ## Reproducibility and raw logs
 
 The public `runs_openai.jsonl` contains 119 attempt records: 80 completed responses (40 per condition), 38 failed API connection attempts, and one incomplete neutral response. The 80 completed responses were rescored directly from their stored outputs. Neutral joint accuracy is 38/40 (95.0%), and temporal-hint joint accuracy is 33/40 (82.5%), matching the corresponding entries in `results_summary.json`.
 
-The public copy has had provider-generated response IDs removed. A pattern-based scan found no obvious API keys, bearer tokens, authorization-header values, private-key markers, or email addresses. See `RAW_RUNS_STATUS.md` for the full scope and limitations of this review.
+Both public run logs have had provider-generated response IDs removed. Pattern-based scans found no obvious API keys, bearer tokens, authorization-header values, private-key markers, or email addresses. See `RAW_RUNS_STATUS.md` for the scope and limitations of these reviews.
 
-The separate 40-response balanced-hint log is not present, so the public raw log does not independently reproduce all 120 successful responses reported in the three-condition summary. Do not claim otherwise.
+The separate `runs_balanced_hint.jsonl` file contains 40 completed responses for the balanced-hint condition. All 40 benchmark item IDs appear exactly once, all records use the same model identifier and dataset hash, and every predicted status and selected action matches its gold label/action. Its 100% joint accuracy matches `results_summary.json`. Provider-generated response identifiers were removed from the public copy.
 
 ## Work provenance and AI assistance
 
@@ -58,7 +59,7 @@ AI tools assisted with code drafting and debugging, analysis-script development,
 
 ## Sprint submission status
 
-The working report contains a 150–250 word abstract and the required appendix titled **Limitations and Dual-Use / Ethical Considerations**. The exact official Google Docs template still needs to be applied and the final page count checked. The sprint's official template and guidelines are linked below.
+The report contains a 150–250 word abstract and the required appendix titled **Limitations and Dual-Use / Ethical Considerations**. The exact official Google Docs template still needs to be applied and the final page count checked. The sprint's official template and guidelines are linked below.
 
 - [Official report template](https://docs.google.com/document/d/17b3JWki-ZkaqdmqGI5d0gof-HwlGuWU9Mc_1klNZXKs/copy?usp=sharing)
 - [Sprint guidelines](https://apartresearch.com/sprints/ai-x-epistemics-research-sprint-2026-11-13-to-2026-11-15#guidelines)
