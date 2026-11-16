@@ -55,6 +55,7 @@ These results do not establish general temporal reasoning ability, performance o
 - `runs_balanced_hint.jsonl`: 40 completed balanced-hint responses. Provider response IDs have been removed.
 - `RAW_RUNS_STATUS.md`: record-integrity and redaction audit.
 - `results_summary.json`: pilot metrics and paired-comparison results.
+- `paired_comparisons.csv`: item-level paired-test summary and Holm-adjusted p-values.
 
 The public run logs contain the 120 successful responses across all three conditions, plus the failed/incomplete attempts retained in the first log for transparency. The balanced-hint log was checked for valid JSON, unique coverage of all 40 item IDs, consistent model and dataset hash, and agreement between each predicted status/action and its gold label/action. The raw-data checks verify record integrity and scoring consistency; they do not independently validate the benchmark's gold-label design.
 
