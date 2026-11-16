@@ -240,9 +240,17 @@ The project package records work completed during the 13-15 November 2026 sprint
 
 AI tools assisted with code drafting/debugging, analysis-script development, and editorial review. The researcher remains responsible for checking the dataset, labels, run records, calculations, references, and final claims.
 
-## Sprint submission status
+## Report structure and submission check
 
-The report contains a 150-250 word abstract and the required appendix titled **Limitations and Dual-Use / Ethical Considerations**. The exact official Google Docs template still needs to be applied and the final page count checked.
+The current report is titled **When Evidence Expires: Prompt Sensitivity in Document-Validity Decisions**. Its methodology is Section 4, titled **Method**, with subsections covering the dataset, model and procedure, prompt conditions, metrics and statistical test, and sprint work/code provenance/AI assistance.
+
+The report includes:
+- A 150-250 word abstract.
+- Introduction, related work, research questions, method, results, discussion, limitations, conclusion, and next study.
+- References, excluded from the main-paper page limit.
+- Appendix A, titled **Limitations and Dual-Use / Ethical Considerations**, plus public research materials.
+
+The final PDF has been exported by the author. Before submission, check the exported PDF itself to confirm that the main paper is within the required 4-8 pages, excluding references and appendices, and that Appendix A and the public research materials are present.
 
 - [Official report template](https://docs.google.com/document/d/17b3JWki-ZkaqdmqGI5d0gof-HwlGuWU9Mc_1klNZXKs/copy?usp=sharing)
 - [Sprint guidelines](https://apartresearch.com/sprints/ai-x-epistemics-research-sprint-2026-11-13-to-2026-11-15#guidelines)
