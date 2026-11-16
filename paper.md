@@ -200,7 +200,7 @@ We reduced these risks in this pilot by using entirely fictional documents, avoi
 
 ### Privacy, data handling, and human review
 
-The v0.1 dataset contains fictional text and dates and no personal data. No human-subject data were collected. The gold labels were reviewed by one researcher; independent annotation and adjudication remain future work. The public neutral and temporal-hint log was screened for obvious API keys, bearer tokens, authorization-header values, private-key markers, and email addresses. No matches were found by that pattern-based screening, which is not a guarantee that every possible sensitive value has been ruled out. Provider-generated response identifiers were removed from the public copy, while experimental outputs and relevant metadata were retained. The original unmodified append-only log should be kept in private storage. The balanced-hint raw log is not included in the public repository.
+The v0.1 dataset contains fictional text and dates and no personal data. No human-subject data were collected. The gold labels were reviewed by one researcher; independent annotation and adjudication remain future work. The public neutral/temporal-hint and balanced-hint logs were screened for obvious API keys, bearer tokens, authorization-header values, private-key markers, and email addresses. No matches were found by that pattern-based screening, which is not a guarantee that every possible sensitive value has been ruled out. Provider-generated response identifiers were removed from both public copies, while experimental outputs and relevant metadata were retained. The original unmodified append-only logs should be kept in private storage.
 
 ### AI assistance and accountability
 
